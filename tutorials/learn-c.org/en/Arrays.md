@@ -27,37 +27,42 @@ Array elements are accessed by using an integer index. Array index starts with 0
 
 Let us put everything we learned together. Take a look at the below program:
 
-`
-#include <stdio.h>
-int main() {
-  // declare the array and initialize elements 
-  int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-  printf("%s", "Before change:\n");
-  printf("First element : %d\nSecond element : %d", arr[0],arr[1]);
-  // change the first and second element in the array
-  arr[0] = 20;
-  arr[1] = 30;
-  // print out the values to be sure the values have changed
-  printf("%s", "After change:\n");
-  printf("First element : %d\nSecond element : %d", arr[0],arr[1]);
-  return 0;
-}
-`
+
+    #include <stdio.h>
+    int main() {
+    // declare the array and initialize elements 
+    int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    printf("%s", "Before change:\n");
+    printf("First element : %d\nSecond element : %d", arr[0],arr[1]);
+
+    // change the first and second element in the array
+    arr[0] = 20;
+    arr[1] = 30;
+    
+    // print out the values to be sure the values have changed
+    printf("%s", "After change:\n");
+    printf("First element : %d\nSecond element : %d", arr[0],arr[1]);
+    
+    return 0;
+    }
+
 
 Above, we have declared and initialized our array. Then, we changed their values. Before and after the operations, we printed out the values.
 
 Before finishing this article, I want to teach you a cool way to get user input into an array. Say, we have 10 people and our mission is to get their weights and calculate the average weight. Each person will enter their weight. Since we know how many people will enter their weights, we can hold the values inside the array. However, assigning each value to the specific index by hand is very tedious and boring task. What would we do if we had to calculate the average weight of 1000 people? Luckily, with a little help of a for loop we can easily solve this issue. Examine the below code:
 
-`
-#include <stdio.h>
-int main() {
-  int weights[10];
-  int i;
-  for( i=0; i<10; i++) {
-    scanf("%d",weights[i]);
-  }
-}
-`
+
+    #include <stdio.h>
+    int main() {
+    
+      int weights[10];
+      
+      int i;
+      for( i=0; i<10; i++) {
+        scanf("%d",weights[i]);
+      }
+    }
     
 (If you do not know how `scanf()` method works, go ahead and search for it)
 
