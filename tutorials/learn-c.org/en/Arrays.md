@@ -1,19 +1,7 @@
 Tutorial
 --------
 
-An array in C is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to hold primitive data types such as int, float, char etc. In below, there is a representation of an array:
-
-`
----------------------
-+   +   +   +   +   + 
-+ 1 + 2 + 3 + 4 + 5 +
-+   +   +   +   +   + 
----------------------
-  ^   ^   ^   ^   ^
-  |   |   |   |   |
- [0] [1] [2] [3] [4]
-` 
-
+An array in C is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to hold primitive data types such as int, float, char etc.
 
 Since an array can hold only one data type values before declaring an array, we must specify what data types the array will hold, what will be the name of the array and what is the size. Follow the below blueprint when declaring an array:
 
@@ -35,7 +23,7 @@ Go ahead and try to run 3 types of arrays in your development environment(do not
 
 We have learned to declare an array but how do we put values inside it? There is one way of putting values inside but this may not be the situation every time. We do not have the luxury to put values as soon as we declare the array. Luckily, there is another way of putting values inside an array, called indexing. When you want to access a specific array just type its name and which value you want to access. But be careful, in indexing, counting starts from 0. So, first element in an array will be in 0th index. 
 
-Recall, at the beginning in the article I have demonstared the representation of an array. Below in the representation, you can see values pointing to specific values in square brackets. This is called indexing. 0th index is pointing to 1, 1st index is pointing to 2 etc. For assigning values to specific indexes is done by equality operator.
+Array elements are accessed by using an integer index. Array index starts with 0 and goes till size of array minus 1.  0th index is pointing to 1, 1st index is pointing to 2 etc. For assigning values to specific indexes is done by equality operator.
 
 Let us put everything we learned together. Take a look at the below program:
 
